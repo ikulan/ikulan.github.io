@@ -1,4 +1,6 @@
 import Avatar from "../components/Avatar";
+import { GithubSvg } from "../icons/github";
+import { LinkedinSvg } from "../icons/linkedin";
 
 const avatarProps = {
   img_url: "/photo.jpg",
@@ -22,8 +24,19 @@ function Landing() {
         </p>
       </div>
 
-      {/* social icons */}
-
+      {/* social media icons */}
+      <div className="flex space-x-2">
+        <a href="https://github.com/ikulan" target="_blank" rel="noreferrer">
+          <GithubSvg className="w-10 fill-stone-500 hover:fill-peach-400" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ikulan12/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <LinkedinSvg className="w-10 fill-stone-500 hover:fill-peach-400" />
+        </a>
+      </div>
       {/* description */}
 
       {/* nav buttons */}
