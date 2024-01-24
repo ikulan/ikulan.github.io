@@ -7,7 +7,7 @@ const avatarProps = {
 
 function Landing() {
   return (
-    <div className="min-h-screen py-6">
+    <div className="min-h-screen py-6 flex flex-col items-center">
       {/* header */}
       <div className="flex flex-col items-center md:space-y-2">
         <Avatar img_url={avatarProps.img_url} alt_name={avatarProps.alt_name} />
@@ -27,6 +27,23 @@ function Landing() {
       {/* description */}
 
       {/* nav buttons */}
+      <div className="flex flex-col items-start space-y-10 py-6">
+        <div>
+          <a href="#" className="cta">
+            <span>Experience →</span>
+          </a>
+        </div>
+        <div>
+          <a href="#" className="cta">
+            <span>Education →</span>
+          </a>
+        </div>
+        <div>
+          <a href="#" className="cta">
+            <span>Projects →</span>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
