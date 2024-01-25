@@ -2,7 +2,7 @@ function NavButton({ children }) {
   return (
     <div>
       <a href="#" className="cta">
-        <span>{children} →</span>
+        <span className="text-nowrap">{children} →</span>
       </a>
     </div>
   );
