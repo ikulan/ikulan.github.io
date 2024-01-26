@@ -54,9 +54,9 @@ function Landing() {
 
           {/* nav buttons */}
           <div className="flex flex-col items-start space-y-10 py-6 md:flex-row md:justify-between md:space-x-2 md:space-y-0 md:align-middle">
-            <NavButton>Experience</NavButton>
-            <NavButton>Education</NavButton>
-            <NavButton>Projects</NavButton>
+            <NavButton url="#section_exp">Experience</NavButton>
+            <NavButton url="#section_edu">Education</NavButton>
+            <NavButton url="#section_proj">Projects</NavButton>
           </div>
         </div>
       </div>
