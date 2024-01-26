@@ -1,12 +1,18 @@
 import { GithubSvg } from "../icons/github";
 import { LinkedinSvg } from "../icons/linkedin";
 
-function IconButton({ type }) {
+const colorClasses = "fill-stone-500 hover:fill-peach-400";
+const sizeClasses = {
+  sm: "w-5 md:w-6",
+  base: "w-8 md:w-10",
+};
+
+function IconButton({ type, size = "base" }) {
   switch (type.toLowerCase()) {
     case "github":
       return (
         <a href="https://github.com/ikulan" target="_blank" rel="noreferrer">
-          <GithubSvg className="w-8 fill-stone-500 hover:fill-peach-400 md:w-10" />
+          <GithubSvg className={`${colorClasses} ${sizeClasses[size]}`} />
         </a>
       );
 
@@ -17,7 +23,7 @@ function IconButton({ type }) {
           target="_blank"
           rel="noreferrer"
         >
-          <LinkedinSvg className="w-8 fill-stone-500 hover:fill-peach-400 md:w-10" />
+          <LinkedinSvg className={`${colorClasses} ${sizeClasses[size]}`} />
         </a>
       );
 
