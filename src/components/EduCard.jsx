@@ -23,7 +23,7 @@ function EduCard(props) {
     <Card
       theme={customTheme}
       imgSrc={props.logo}
-      className="max-w-xs gap-1 px-4 py-2 md:py-4 lg:max-w-[25rem]"
+      className="w-80 shrink-0 gap-1 px-4 py-2 md:py-4 lg:w-[25rem]"
       horizontal
     >
       <div>
