@@ -6,7 +6,7 @@ function IconButton({ type }) {
     case "github":
       return (
         <a href="https://github.com/ikulan" target="_blank" rel="noreferrer">
-          <GithubSvg className="w-8 md:w-10 fill-stone-500 hover:fill-peach-400" />
+          <GithubSvg className="w-8 fill-stone-500 hover:fill-peach-400 md:w-10" />
         </a>
       );
 
@@ -17,7 +17,7 @@ function IconButton({ type }) {
           target="_blank"
           rel="noreferrer"
         >
-          <LinkedinSvg className="w-8 md:w-10 fill-stone-500 hover:fill-peach-400" />
+          <LinkedinSvg className="w-8 fill-stone-500 hover:fill-peach-400 md:w-10" />
         </a>
       );
 

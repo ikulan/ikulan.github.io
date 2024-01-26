@@ -5,7 +5,7 @@ import Projects from "./sections/Projects";
 
 function App() {
   return (
-    <div className="bg-stone-100 grid px-4 py-2 text-stone-800">
+    <div className="grid bg-stone-100 p-4 text-stone-800">
       <Landing />
       <Experiences />
       <Educations />
