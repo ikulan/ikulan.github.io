@@ -7,4 +7,5 @@ I would like to craft my new website using my newly-gained skills, React and Tai
 - JavaScript
 - React
 - Tailwind CSS
+- Flowbite
 - Vite

@@ -11,7 +11,7 @@ function Footer() {
               className="hover:text-peach-600 hover:underline"
             >
               ikulan
-            </a>
+            </a>{" "}
             &copy; 2024
           </span>
         </div>
