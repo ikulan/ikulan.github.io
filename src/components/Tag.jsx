@@ -5,11 +5,16 @@ const colorClasses = {
   lake: "bg-lake-200 text-lake-900",
 };
 
-function Tag({ children, color }) {
+const sizeClasses = {
+  sm: "text-[0.625rem] lg:text-xs",
+  base: "text-xs md:text-sm",
+};
+
+function Tag({ children, color, size = "base" }) {
   return (
     <span
-      className={`me-2 rounded-full border border-stone-300 px-2.5 py-0.5 text-xs font-medium md:text-sm
-        ${colorClasses[color]}`}
+      className={`me-2 rounded-full border border-stone-300 px-2.5 py-0.5 font-medium 
+        ${colorClasses[color]} ${sizeClasses[size]}`}
     >
       {children}
     </span>
