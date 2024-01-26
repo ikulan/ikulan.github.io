@@ -1,4 +1,5 @@
 import ExpAccordion from "../components/ExpAccordion";
+import SectionHeader from "../components/SectionHeader";
 
 const experiences = [
   {
@@ -65,10 +66,8 @@ function Experiences() {
       id="section_exp"
       className="my-6 grid min-h-screen max-w-screen-xl grid-flow-row auto-rows-max lg:mx-8 lg:mt-12 lg:grid-cols-3"
     >
-      <div className="">
-        <h1 className="pb-2 text-3xl font-bold lg:mb-4 lg:mt-24 xl:text-5xl">
-          Experiences
-        </h1>
+      <div>
+        <SectionHeader>Experience</SectionHeader>
       </div>
       <div className="lg:col-span-2">
         <ExpAccordion expObjs={experiences} />
