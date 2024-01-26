@@ -40,11 +40,12 @@ function Educations() {
   return (
     <div id="section_edu" className="my-6 flex min-h-screen flex-col lg:mx-8">
       <div className="">
-        <h1 className="mb-4 pb-2 text-4xl font-bold lg:mt-24 lg:text-5xl">
-          Education
+        <h1 className="mb-4 pb-2 text-3xl font-bold xl:text-5xl">
+          Education & Certificates
         </h1>
       </div>
       <div className="grid-row grid items-center gap-y-6 md:grid-cols-2 xl:grid-cols-3">
+        {/*<div className="grid auto-cols-auto grid-flow-col items-center gap-y-6">*/}
         {eduObjs.map((obj, i) => (
           <EduCard key={i} {...obj} />
         ))}

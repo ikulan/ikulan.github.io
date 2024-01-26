@@ -5,7 +5,7 @@ function Projects() {
       className="my-6 flex min-h-screen flex-col lg:mx-8 lg:mt-12 lg:flex-row"
     >
       <div className="lg:w-4/12">
-        <h1 className="mb-4 pb-2 text-4xl font-bold lg:mt-24 lg:text-5xl">
+        <h1 className="mb-4 pb-2 text-3xl font-bold lg:mt-24 xl:text-5xl">
           Projects
         </h1>
       </div>

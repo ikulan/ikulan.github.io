@@ -63,14 +63,14 @@ function Experiences() {
   return (
     <div
       id="section_exp"
-      className="my-6 flex min-h-screen flex-col lg:mx-8 lg:mt-12 lg:flex-row"
+      className="my-6 grid min-h-screen max-w-screen-xl grid-flow-row auto-rows-max lg:mx-8 lg:mt-12 lg:grid-cols-3"
     >
-      <div className="lg:w-4/12">
-        <h1 className="mb-4 pb-2 text-4xl font-bold lg:mt-24 lg:text-5xl">
+      <div className="">
+        <h1 className="pb-2 text-3xl font-bold lg:mb-4 lg:mt-24 xl:text-5xl">
           Experiences
         </h1>
       </div>
-      <div className="lg:w-8/12">
+      <div className="lg:col-span-2">
         <ExpAccordion expObjs={experiences} />
       </div>
     </div>

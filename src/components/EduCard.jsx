@@ -13,7 +13,7 @@ const customTheme = {
     base: "",
     horizontal: {
       off: "rounded-t-lg",
-      on: "w-16 md:w-20 lg:w-28 rounded-t-lg object-cover md:rounded-none md:rounded-l-lg",
+      on: "w-16 md:w-20 lg:w-24 rounded-t-lg object-cover md:rounded-none md:rounded-l-lg",
     },
   },
 };
@@ -23,15 +23,15 @@ function EduCard(props) {
     <Card
       theme={customTheme}
       imgSrc={props.logo}
-      className="max-w-full gap-1 px-4 py-2 md:max-w-xs md:py-4 lg:max-w-[26rem]"
+      className="max-w-xs gap-1 px-4 py-2 md:py-4 lg:max-w-[25rem]"
       horizontal
     >
       <div>
-        <p className="text-md font-semibold lg:text-lg">{props.degree}</p>
+        <p className="text-md font-semibold xl:text-lg">{props.degree}</p>
         <p className="font-semibold lg:text-xl">{props.program}</p>
-        <p className="text-sm text-gray-500 lg:text-base">{props.school}</p>
-        <p className="text-sm text-gray-500 lg:text-base">{props.location}</p>
-        <p className="text-sm text-gray-500 lg:text-base">{props.years}</p>
+        <p className="text-sm text-gray-500 xl:text-base">{props.school}</p>
+        <p className="text-sm text-gray-500 xl:text-base">{props.location}</p>
+        <p className="text-sm text-gray-500 xl:text-base">{props.years}</p>
         {props.hasDetail && (
           <a className="text-peach-600 hover:underline" href="">
             Learn more

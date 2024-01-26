@@ -7,7 +7,7 @@ import Footer from "./sections/Footer";
 function App() {
   return (
     <>
-      <div className="grid bg-stone-100 p-4 text-stone-800">
+      <div className="grid justify-center bg-stone-100 p-4 text-stone-800">
         <Landing />
         <Experiences />
         <Educations />
