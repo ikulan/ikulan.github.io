@@ -39,7 +39,7 @@ const eduObjs = [
 
 function Educations() {
   return (
-    <div id="section_edu" className="my-6 flex min-h-screen flex-col lg:mx-8">
+    <div id="section_edu" className="my-6 flex flex-col lg:mx-8 lg:my-12">
       <div className="m-4">
         <SectionHeader>Education & Certificates</SectionHeader>
       </div>

@@ -4,7 +4,7 @@ import AccordionItem from "./AccordionItem";
 const customTheme = {
   accordion: {
     root: {
-      base: "divide-y divide-dashed divide-stone-300 border-stone-300 shadow-lg shadow-stone-300",
+      base: "divide-y divide-dashed divide-stone-300 border border-peach-200 ring-2 ring-peach-200 shadow-lg shadow-stone-300 bg-white",
     },
     content: {
       base: "px-5 last:rounded-b-lg first:rounded-t-lg",
@@ -16,7 +16,7 @@ const customTheme = {
         on: "bg-peach-200",
       },
       open: {
-        on: "text-stone-900 bg-peach-100",
+        on: "text-gray-500 bg-peach-100",
       },
     },
   },

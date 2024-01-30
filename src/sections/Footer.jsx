@@ -9,6 +9,8 @@ function Footer() {
             <a
               href="https://github.com/ikulan/personal_website"
               className="hover:text-peach-600 hover:underline"
+              target="_blank"
+              rel="noreferrer"
             >
               ikulan
             </a>{" "}

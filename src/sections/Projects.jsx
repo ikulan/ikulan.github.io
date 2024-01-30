@@ -56,7 +56,7 @@ const projObjs = [
 
 function Projects() {
   return (
-    <div id="section_proj" className="my-6 flex min-h-screen flex-col lg:mx-8">
+    <div id="section_proj" className="my-6 flex flex-col lg:mx-8 lg:my-12">
       <div>
         <SectionHeader>Projects</SectionHeader>
         <p>Click to see more detail.</p>

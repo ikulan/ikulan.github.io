@@ -64,12 +64,12 @@ function Experiences() {
   return (
     <div
       id="section_exp"
-      className="my-6 grid min-h-screen max-w-screen-xl grid-flow-row auto-rows-max lg:mx-8 lg:mt-12 lg:grid-cols-3"
+      className="my-6 grid max-w-screen-xl grid-flow-row auto-rows-max lg:mx-8 lg:my-12 lg:grid-cols-3"
     >
       <div>
         <SectionHeader>Experience</SectionHeader>
       </div>
-      <div className="lg:col-span-2">
+      <div className="mt-6 lg:col-span-2">
         <ExpAccordion expObjs={experiences} />
       </div>
     </div>
