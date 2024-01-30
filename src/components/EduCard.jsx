@@ -1,6 +1,6 @@
 import { Card } from "flowbite-react";
 
-const customTheme = {
+export const eduCardTheme = {
   root: {
     base: "flex rounded-lg border border-gray-200 bg-white shadow-md items-center",
     children: "flex h-full flex-col justify-center p-2 lg:p-4",
@@ -21,7 +21,7 @@ const customTheme = {
 function EduCard(props) {
   return (
     <Card
-      theme={customTheme}
+      theme={eduCardTheme}
       imgSrc={props.logo}
       className="w-80 shrink-0 gap-1 px-4 py-2 md:py-4 lg:w-[25rem]"
       horizontal
@@ -32,11 +32,6 @@ function EduCard(props) {
         <p className="text-sm text-gray-500 xl:text-base">{props.school}</p>
         <p className="text-sm text-gray-500 xl:text-base">{props.location}</p>
         <p className="text-sm text-gray-500 xl:text-base">{props.years}</p>
-        {props.hasDetail && (
-          <a className="text-peach-600 hover:underline" href="">
-            Learn more
-          </a>
-        )}
       </div>
     </Card>
   );

@@ -1,4 +1,5 @@
 import EduCard from "../components/EduCard";
+import EduCardWithModal from "../components/EduCardWithModal";
 import SectionHeader from "../components/SectionHeader";
 import { eduObjs } from "../contents/education";
 
@@ -11,7 +12,11 @@ function Educations() {
       <div className="grid-row grid items-center justify-center gap-y-6 md:grid-cols-2 xl:grid-cols-3">
         {eduObjs.map((obj, i) => (
           <div key={i} className="flex justify-center">
-            <EduCard key={i} {...obj} />
+            {obj.hasDetail ? (
+              <EduCardWithModal {...obj} />
+            ) : (
+              <EduCard {...obj} />
+            )}
           </div>
         ))}
       </div>

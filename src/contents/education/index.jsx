@@ -1,3 +1,5 @@
+import { DetailLLM } from "./details";
+
 export const eduObjs = [
   {
     degree: "Master's Degree",
@@ -31,5 +33,8 @@ export const eduObjs = [
     location: null,
     years: "2023",
     hasDetail: true,
+    detailComponent: DetailLLM,
+    credentialUrl:
+      "https://credentials.edx.org/credentials/5d0f0fefcc2d43e2b756fcf5b910c7d6/",
   },
 ];
