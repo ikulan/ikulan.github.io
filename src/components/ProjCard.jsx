@@ -46,10 +46,7 @@ function ProjCard(props) {
       <ProjModal
         isOpen={openModal}
         handleClose={() => setOpenModal(false)}
-        name={props.name}
-        imgUrl={props.imgUrl}
-        creationDate={props.creationDate}
-        {...props.details}
+        {...props}
       />
     </>
   );

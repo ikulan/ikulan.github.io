@@ -1,41 +1,6 @@
 import EduCard from "../components/EduCard";
 import SectionHeader from "../components/SectionHeader";
-
-const eduObjs = [
-  {
-    degree: "Bachelor's Degree",
-    program: "Computer Science",
-    school: "National Tsing Hua University",
-    logo: "/logo_nthu.png",
-    location: "Taiwan",
-    years: "2007 - 2011",
-  },
-  {
-    degree: "Master's Degree",
-    program: "Computer Science",
-    school: "National Tsing Hua University",
-    logo: "/logo_nthu.png",
-    location: "Taiwan",
-    years: "2011 - 2014",
-  },
-  {
-    degree: "Exchange Student",
-    program: "Informatics",
-    school: "Kyoto University",
-    logo: "/logo_kyotoU.svg",
-    location: "Japan",
-    years: "2013 - 2014",
-  },
-  {
-    degree: "Professional Certificate",
-    program: "Large Language Models",
-    school: "Databricks",
-    logo: "/logo_databricks.png",
-    location: null,
-    years: "2023",
-    hasDetail: true,
-  },
-];
+import { eduObjs } from "../contents/education";
 
 function Educations() {
   return (

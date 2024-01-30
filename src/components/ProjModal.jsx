@@ -36,28 +36,7 @@ function ProjModal(props) {
 
         {/* description */}
         <div className="w-2/3 space-y-4 pl-4">
-          {props.intro &&
-            props.intro.map((paragraph, i) => (
-              <p className="text-base leading-relaxed text-gray-600" key={i}>
-                {paragraph}
-              </p>
-            ))}
-
-          <h3 className="font-medium">What I have learned</h3>
-          {props.learned &&
-            props.learned.map((paragraph, i) => (
-              <p className="text-base leading-relaxed text-gray-600" key={i}>
-                {paragraph}
-              </p>
-            ))}
-
-          <h3 className="font-medium">Next Step</h3>
-          {props.nextStep &&
-            props.nextStep.map((paragraph, i) => (
-              <p className="text-base leading-relaxed text-gray-600" key={i}>
-                {paragraph}
-              </p>
-            ))}
+          <props.detailComponent />
         </div>
       </Modal.Body>
       <Modal.Footer>
