@@ -3,7 +3,7 @@ import { DetailWebsite, DetailPiggies } from "./details";
 export const projObjs = [
   {
     name: "Personal Website",
-    imgUrl: "/projects/landing_1024x768.png",
+    imgUrl: "./projects/landing_1024x768.png",
     creationDate: "Jan, 2024",
     description: "This website. I crafted it from scratch.",
     skills: [
@@ -21,7 +21,7 @@ export const projObjs = [
   },
   {
     name: "Three Little Piggies",
-    imgUrl: "/projects/piggies.png",
+    imgUrl: "./projects/piggies.png",
     creationDate: "Oct, 2023",
     description:
       "A vanilla TypeScript project for the web version of a board game.",

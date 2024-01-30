@@ -10,7 +10,7 @@ export function ExpOverview() {
       <p className="text-pretty">
         I&apos;m actively seeking opportunities to reenter the workforce.
         Meanwhile, I keep going on enhancing my skills and gaining knowledge to
-        enrich my professional profile. I am fully prepared to bring my
+        elevate my professional profile. I am fully prepared to bring my
         expertise to the table and eagerly anticipate long-term career growth
         with my next team.
       </p>

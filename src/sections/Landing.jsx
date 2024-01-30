@@ -3,7 +3,7 @@ import IconButton from "../components/IconButton";
 import NavButton from "../components/NavButton";
 
 const avatarProps = {
-  img_url: "/photo.jpg",
+  img_url: "./photo.jpg",
   alt_name: "Patty Liu",
 };
 
