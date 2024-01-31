@@ -38,14 +38,14 @@ function Landing() {
 
         <div className="flex flex-col items-center space-y-2 md:space-y-4 lg:w-8/12">
           {/* description */}
-          <div className="space-y-2 px-3 py-4 text-sm md:max-w-xl md:py-6 md:text-lg">
-            <p className="text-pretty">
+          <div className="space-y-4 text-pretty px-3 py-4 text-sm md:max-w-xl md:py-6 md:text-lg">
+            <p>
               With 6 years of professional experience, I possess expertise in
               backend technologies and languages such as Python, Ruby, and Java.
               I&apos;m also proficient in front-end technologies and frameworks
               (e.g., HTML, CSS, JavaScript, React.)
             </p>
-            <p className="text-pretty">
+            <p>
               Throughout my career, I am dedicated to delivering high-quality
               software, pursuing continuous growth, and maintaining seamless
               collaboration with cross-functional teams.
