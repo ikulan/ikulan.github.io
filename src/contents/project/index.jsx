@@ -14,7 +14,7 @@ export const projObjs = [
       { name: "Vite", color: "lake" },
     ],
     detailComponent: DetailWebsite,
-    techstack: "JavaScript, React, Tailwind CSS, Flowbite-React, Vite",
+    techstack: "JavaScript, React, TailwindCSS, Flowbite-React, Vite",
     deployment: "GitHub Pages",
     siteUrl: "https://ikulan.github.io",
     githubUrl: "https://github.com/ikulan/personal_website",

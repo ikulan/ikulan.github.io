@@ -2,6 +2,13 @@ import { Button, Modal } from "flowbite-react";
 import { GithubSvg } from "../icons/github";
 import { ExtLinkSvg } from "../icons/external_link";
 
+const modalTheme = {
+  content: {
+    inner:
+      "relative rounded-lg bg-white shadow dark:bg-gray-700 flex flex-col max-h-[85dvh]",
+  },
+};
+
 const buttonTheme = {
   color: {
     peach:
@@ -11,18 +18,23 @@ const buttonTheme = {
 
 function ProjModal(props) {
   return (
-    <Modal show={props.isOpen} onClose={props.handleClose} size="3xl">
+    <Modal
+      show={props.isOpen}
+      onClose={props.handleClose}
+      size="3xl"
+      theme={modalTheme}
+    >
       <Modal.Header>
         <span className="font-semibold">{props.name}</span>
         <span className="ml-4 text-xs font-medium text-gray-500 lg:text-sm">
           {props.creationDate}
         </span>
       </Modal.Header>
-      <Modal.Body className="flex overflow-auto md:flex-row">
+      <Modal.Body className="flex flex-col-reverse overflow-auto md:flex-row">
         {/* image and info */}
-        <div className="w-1/3 text-gray-800">
+        <div className="mt-4 grid grid-cols-2 gap-x-2 gap-y-2 text-gray-800 md:mt-0 md:w-1/3 md:grid-cols-1">
           <img src={props.imgUrl} />
-          <div className="mt-2 space-y-2 text-sm">
+          <div className="space-y-2 text-sm">
             <div>
               <h3 className="font-semibold">Techstack:</h3>
               <p>{props.techstack}</p>
@@ -35,7 +47,7 @@ function ProjModal(props) {
         </div>
 
         {/* description */}
-        <div className="w-2/3 space-y-4 pl-4">
+        <div className="space-y-4 md:w-2/3 md:pl-4">
           <props.detailComponent />
         </div>
       </Modal.Body>
