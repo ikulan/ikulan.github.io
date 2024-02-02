@@ -44,7 +44,7 @@ function AccordionItem(props) {
         </div>
       </Accordion.Title>
       <Accordion.Content>
-        <div className="min-h-28 p-3 pl-6 md:text-lg">
+        <div className="min-h-28 p-3 pl-6 text-sm leading-relaxed text-stone-900 md:text-base xl:text-lg">
           <ul className="list-disc">
             {props.descriptions &&
               props.descriptions.map((line, i) => (

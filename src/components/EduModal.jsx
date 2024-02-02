@@ -11,12 +11,18 @@ const buttonTheme = {
 
 function EduModal(props) {
   return (
-    <Modal show={props.isOpen} size="2xl" onClose={props.handleClose} popup>
+    <Modal
+      show={props.isOpen}
+      size="2xl"
+      onClose={props.handleClose}
+      popup
+      dismissible
+    >
       <Modal.Header />
       <Modal.Body>
         <div className="text-center">
-          <p className="text-md font-medium xl:text-lg">{props.degree}</p>
-          <p className="text-lg font-semibold lg:text-xl">{props.program}</p>
+          <h5 className="text-md font-medium xl:text-lg">{props.degree}</h5>
+          <h4 className="text-lg font-semibold lg:text-xl">{props.program}</h4>
           <span className="text-sm text-gray-500 xl:text-base">
             {props.school}
           </span>

@@ -5,7 +5,7 @@ import EduModal from "./EduModal";
 
 function EduCardWithModal(props) {
   const [openModal, setOpenModal] = useState(false);
-  const titleSize = props.program.length > 18 ? "text-md" : "text-lg";
+  const h2Size = props.program.length > 18 ? "text-md" : "text-lg";
 
   return (
     <>
@@ -17,10 +17,10 @@ function EduCardWithModal(props) {
         onClick={() => setOpenModal(true)}
       >
         <div>
-          <p className="text-md font-semibold xl:text-lg">{props.degree}</p>
-          <p className={`${titleSize} font-semibold lg:text-xl`}>
+          <h3 className="text-md font-semibold xl:text-lg">{props.degree}</h3>
+          <h2 className={`${h2Size} font-semibold lg:text-xl`}>
             {props.program}
-          </p>
+          </h2>
           <p className="text-sm text-gray-500 xl:text-base">{props.school}</p>
           {props.location ? (
             <>

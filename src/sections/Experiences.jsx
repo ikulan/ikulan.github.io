@@ -8,7 +8,7 @@ function Experiences() {
     <div id="section_exp" className="my-6 max-w-screen-xl lg:mx-8 lg:my-12 ">
       <SectionHeader>Experience</SectionHeader>
       <div className="grid grid-flow-row auto-rows-max lg:grid-cols-3">
-        <div className="mx-2 mb-4 space-y-2 text-pretty text-sm md:text-base lg:mx-0 lg:space-y-4 lg:pr-4 xl:text-lg">
+        <div className="mx-2 mb-4 space-y-2 text-pretty text-sm leading-relaxed text-stone-900 md:text-base lg:mx-0 lg:space-y-4 lg:pr-4 xl:text-lg">
           <ExpOverview />
         </div>
         <div className="lg:col-span-2">
