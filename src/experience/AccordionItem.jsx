@@ -1,5 +1,5 @@
 import { Accordion } from "flowbite-react";
-import Tag from "./Tag";
+import Tag from "../components/Tag";
 import { ExtLinkSvg } from "../icons/external_link";
 
 function AccordionItem(props) {

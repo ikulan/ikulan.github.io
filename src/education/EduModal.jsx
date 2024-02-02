@@ -1,5 +1,5 @@
 import { Modal } from "flowbite-react";
-import ModalButton from "./ModalButton";
+import ModalButton from "../components/ModalButton";
 
 function EduModal(props) {
   return (

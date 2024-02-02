@@ -1,4 +1,4 @@
-export function ExpOverview() {
+function ExpOverview() {
   return (
     <>
       <p>
@@ -17,3 +17,5 @@ export function ExpOverview() {
     </>
   );
 }
+
+export default ExpOverview;

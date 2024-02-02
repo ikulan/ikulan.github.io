@@ -1,6 +1,6 @@
 import Avatar from "../components/Avatar";
 import IconButton from "../components/IconButton";
-import NavButton from "../components/NavButton";
+import NavButton from "./NavButton";
 
 const avatarProps = {
   img_url: "./photo.jpg",

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Card } from "flowbite-react";
-import { eduCardTheme } from "./EduCard";
+import { eduCardTheme } from "./theme";
 import EduModal from "./EduModal";
 
 function EduCardWithModal(props) {

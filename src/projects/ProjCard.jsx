@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Card } from "flowbite-react";
-import Tag from "./Tag";
+import Tag from "../components/Tag";
 import ProjModal from "./ProjModal";
 
 const customTheme = {
