@@ -25,7 +25,7 @@ const customTheme = {
 function ExpAccordion({ expObjs }) {
   return (
     <Flowbite theme={{ theme: customTheme }}>
-      <Accordion>
+      <Accordion collapseAll>
         {expObjs.map((obj) => (
           <Accordion.Panel key={obj.companyName}>
             <AccordionItem {...obj} />

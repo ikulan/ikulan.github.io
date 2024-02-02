@@ -15,10 +15,12 @@ export const expObjs = [
       { name: "Startup", color: "sky" },
     ],
     descriptions: [
-      "Developed the web application to serve enterprise clients an influencer marketing and analytics platform using Ruby, JavaScript.",
-      "Designed and implemented the datastore and system pipeline to leverage the high-volume data using MongoDB and Elasticsearch.",
-      "Created intuitive user interfaces and interactive charts using front-end technologies, enabling advanced analyzing and reporting features within the application.",
-      "Conducted data science projects to deliver valuable insights using Python. The works include data crawling, data cleaning, modelling, integration, and visualization.",
+      "Developed the SaaS web application of an influencer marketing management and analytics software using Ruby (Sinatra).",
+      "Designed and implemented RESTful API, leveraging MongoDB to store and process the high-volume social media data.",
+      "Worked collaboratively with the design and product teams to craft comprehensive analytics and reporting features, incorporating interactive data visualizations through the use of JavaScript, jQuery, and D3.js.",
+      "Developed the search system using Elasticsearch, optimizing search performance, and extending seach capabilities for CJK contents.",
+      "Established integration test using Capybara framework to ensure robust end-to-end functionality.",
+      "Constructed a Python API service (using Flask) to leverage machine learning models, extracting meaningful insights and enhance the data quality of the platform.",
     ],
   },
   {
@@ -30,13 +32,15 @@ export const expObjs = [
     skills: [
       { name: "Java", color: "amber" },
       { name: "Natural Language Processing", color: "blueviolet" },
-      { name: "Data Processing Pipeline", color: "sky" },
+      { name: "Jenkins", color: "lake" },
     ],
     descriptions: [
-      "Developed the backend of social listening system using Java, ensuring the robustness and efficiency to process and extract insights from large-scale social media data.",
-      "Optimized time performance, memory utilization, and multi-thread handling. Utilized VisualVM to benchmark Java programs and identify areas for improvements.",
-      "Evaluated and integrated new technologies into the system, expanding language support for NLP processing from 7 to 15 languages.",
-      "Owned and developed internal tools, assisting linguist and scientist colleagues to streamline and enhance their workflow.",
+      "Developed the large-scale data processing pipeline for a social listening system using Java. Supported NLP processing on millions of social media posts per hour.",
+      "Collaborated with Linguists colleagues to develop the rule-based NLP engine. Transformed XML rules into programmable logics, leveraging algorithmic and data structure knowledge to efficiently extract diverse linguistic structures from text data across 27 deep parsing languages.",
+      "Evaluated and integrated new technologies into the NLP pipeline, engineering innovative solutions into robust software modules.",
+      "Conducted profiling and optimization of Java programs to enhance the time performance, memory utilization and multi-thread handling, ensuring the efficiency and reliability within distributed system.",
+      "Owned and developed an internal tool using Java Swing, a desktop GUI application to visualize NLP parsing results.",
+      "Set up CI/CD pipeline using Jenkins, enabling test automation, software releasing and deployment.",
     ],
   },
   {
