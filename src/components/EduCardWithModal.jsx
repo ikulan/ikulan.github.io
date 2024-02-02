@@ -5,6 +5,7 @@ import EduModal from "./EduModal";
 
 function EduCardWithModal(props) {
   const [openModal, setOpenModal] = useState(false);
+  const titleSize = props.program.length > 18 ? "text-md" : "text-lg";
 
   return (
     <>
@@ -17,16 +18,36 @@ function EduCardWithModal(props) {
       >
         <div>
           <p className="text-md font-semibold xl:text-lg">{props.degree}</p>
-          <p className="font-semibold lg:text-xl">{props.program}</p>
+          <p className={`${titleSize} font-semibold lg:text-xl`}>
+            {props.program}
+          </p>
           <p className="text-sm text-gray-500 xl:text-base">{props.school}</p>
-          <p className="text-sm text-gray-500 xl:text-base">{props.location}</p>
-          <p className="text-sm text-gray-500 xl:text-base">{props.years}</p>
-          <a
-            className="text-peach-600 hover:underline"
-            onClick={() => setOpenModal(true)}
-          >
-            Learn more
-          </a>
+          {props.location ? (
+            <>
+              <p className="text-sm text-gray-500 xl:text-base">
+                {props.location}
+              </p>
+              <div className="flex justify-between">
+                <p className="text-sm text-gray-500 xl:text-base">
+                  {props.years}
+                </p>
+                <p className="text-sm text-peach-600 hover:underline">
+                  more &gt;&gt;
+                </p>
+              </div>
+            </>
+          ) : (
+            <>
+              <p className="text-sm text-gray-500 xl:text-base">
+                {props.years}
+              </p>
+              <div className="flex justify-end">
+                <p className="text-sm text-peach-600 hover:underline">
+                  more &gt;&gt;
+                </p>
+              </div>
+            </>
+          )}
         </div>
       </Card>
       <EduModal

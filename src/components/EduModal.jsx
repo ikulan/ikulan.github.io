@@ -16,7 +16,7 @@ function EduModal(props) {
       <Modal.Body>
         <div className="text-center">
           <p className="text-md font-medium xl:text-lg">{props.degree}</p>
-          <p className="font-semibold lg:text-xl">{props.program}</p>
+          <p className="text-lg font-semibold lg:text-xl">{props.program}</p>
           <span className="text-sm text-gray-500 xl:text-base">
             {props.school}
           </span>
@@ -28,17 +28,23 @@ function EduModal(props) {
         <div className="mb-4 mt-2 space-y-4">
           <props.detailComponent />
         </div>
+
         <div className="grid w-full grid-cols-2 gap-2">
-          <Button
-            theme={buttonTheme}
-            className="grow"
-            color="peach"
-            href={props.credentialUrl}
-            target="_blank"
-          >
-            Show Credential
-            <ExtLinkSvg className="ml-2 w-5 stroke-peach-900" />
-          </Button>
+          {props.credentialUrl ? (
+            <Button
+              theme={buttonTheme}
+              className="grow"
+              color="peach"
+              href={props.credentialUrl}
+              target="_blank"
+            >
+              Show Credential
+              <ExtLinkSvg className="ml-2 w-5 stroke-peach-900" />
+            </Button>
+          ) : (
+            <div></div>
+          )}
+
           <Button
             theme={buttonTheme}
             className="grow"

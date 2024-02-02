@@ -28,7 +28,7 @@ function EduCard(props) {
     >
       <div>
         <p className="text-md font-semibold xl:text-lg">{props.degree}</p>
-        <p className="font-semibold lg:text-xl">{props.program}</p>
+        <p className="text-lg font-semibold lg:text-xl">{props.program}</p>
         <p className="text-sm text-gray-500 xl:text-base">{props.school}</p>
         <p className="text-sm text-gray-500 xl:text-base">{props.location}</p>
         <p className="text-sm text-gray-500 xl:text-base">{props.years}</p>
