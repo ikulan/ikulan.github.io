@@ -1,13 +1,5 @@
-import { Button, Modal } from "flowbite-react";
-import { ExtLinkSvg } from "../icons/external_link";
-
-const buttonTheme = {
-  color: {
-    peach:
-      "text-peach-900 bg-peach-200 hover:bg-peach-300 focus:ring-offset-2 focus:ring-peach-500",
-    gray: "text-gray-900 bg-white border border-gray-200 enabled:hover:bg-gray-100 focus:ring-offset-2 focus:ring-peach-500 focus:ring-4",
-  },
-};
+import { Modal } from "flowbite-react";
+import ModalButton from "./ModalButton";
 
 function EduModal(props) {
   return (
@@ -37,28 +29,14 @@ function EduModal(props) {
 
         <div className="grid w-full grid-cols-2 gap-2">
           {props.credentialUrl ? (
-            <Button
-              theme={buttonTheme}
-              className="grow"
-              color="peach"
-              href={props.credentialUrl}
-              target="_blank"
-            >
+            <ModalButton type="link" action={props.credentialUrl}>
               Show Credential
-              <ExtLinkSvg className="ml-2 w-5 stroke-peach-900" />
-            </Button>
+            </ModalButton>
           ) : (
             <div></div>
           )}
 
-          <Button
-            theme={buttonTheme}
-            className="grow"
-            color="gray"
-            onClick={props.handleClose}
-          >
-            Close
-          </Button>
+          <ModalButton type="close" action={props.handleClose} />
         </div>
       </Modal.Body>
     </Modal>

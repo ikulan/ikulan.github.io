@@ -1,19 +1,10 @@
-import { Button, Modal } from "flowbite-react";
-import { GithubSvg } from "../icons/github";
-import { ExtLinkSvg } from "../icons/external_link";
+import { Modal } from "flowbite-react";
+import ModalButton from "./ModalButton";
 
 const modalTheme = {
   content: {
     inner:
       "relative rounded-lg bg-white shadow dark:bg-gray-700 flex flex-col max-h-[85dvh]",
-  },
-};
-
-const buttonTheme = {
-  color: {
-    peach:
-      "text-peach-900 bg-peach-200 hover:bg-peach-300 focus:ring-offset-2 focus:ring-peach-500",
-    gray: "text-gray-900 bg-white border border-gray-200 enabled:hover:bg-gray-100 focus:ring-offset-2 focus:ring-peach-500 focus:ring-4",
   },
 };
 
@@ -53,40 +44,17 @@ function ProjModal(props) {
               <p>{props.deployment}</p>
             </div>
             <div className="flex">
-              <Button
-                theme={buttonTheme}
-                color="peach"
-                size="sm"
-                href={props.githubUrl}
-                target="_blank"
-              >
-                <GithubSvg className="mr-2 w-5 fill-peach-900" />
-                Source Code
-              </Button>
+              <ModalButton type="github" action={props.githubUrl} />
             </div>
           </div>
         </div>
       </Modal.Body>
       <Modal.Footer>
         <div className="grid w-full grid-cols-2 gap-2">
-          <Button
-            theme={buttonTheme}
-            className="grow"
-            color="peach"
-            href={props.siteUrl}
-            target="_blank"
-          >
+          <ModalButton type="link" action={props.siteUrl}>
             Visit Website
-            <ExtLinkSvg className="ml-2 w-5 stroke-peach-900" />
-          </Button>
-          <Button
-            theme={buttonTheme}
-            className="grow"
-            color="gray"
-            onClick={props.handleClose}
-          >
-            Close
-          </Button>
+          </ModalButton>
+          <ModalButton type="close" action={props.handleClose} />
         </div>
       </Modal.Footer>
     </Modal>
