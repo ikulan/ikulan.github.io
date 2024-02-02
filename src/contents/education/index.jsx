@@ -1,4 +1,4 @@
-import { DetailLLM } from "./details";
+import { DetailMaster, DetailLLM } from "./details";
 
 export const eduObjs = [
   {
@@ -8,6 +8,8 @@ export const eduObjs = [
     logo: "./logo_nthu.png",
     location: "Taiwan",
     years: "2011 - 2014",
+    hasDetail: true,
+    detailComponent: DetailMaster,
   },
   {
     degree: "Bachelor's Degree",
