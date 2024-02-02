@@ -8,8 +8,9 @@ export function DetailMaster() {
       <p className="text-base leading-relaxed text-gray-600">
         Completed graduate-level researches and thesis in NLP area: Built a
         knowledge extraction system using Python to mine terminologies and their
-        definitions from unstructured large corpus, disambiguating and
-        clustering the meanings by context features.
+        definitions from unstructured large corpus. Applied machine learning
+        models to disambiguate and cluster the meanings based on context
+        features.
       </p>
       <h3 className="font-medium">Teaching Assistant:</h3>
       <ul className="list-inside list-disc leading-relaxed text-gray-600">

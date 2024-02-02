@@ -13,6 +13,7 @@ const buttonTheme = {
   color: {
     peach:
       "text-peach-900 bg-peach-200 hover:bg-peach-300 focus:ring-offset-2 focus:ring-peach-500",
+    gray: "text-gray-900 bg-white border border-gray-200 enabled:hover:bg-gray-100 focus:ring-offset-2 focus:ring-peach-500 focus:ring-4",
   },
 };
 
@@ -23,6 +24,7 @@ function ProjModal(props) {
       onClose={props.handleClose}
       size="3xl"
       theme={modalTheme}
+      dismissible
     >
       <Modal.Header>
         <span className="font-semibold">{props.name}</span>
@@ -30,10 +32,17 @@ function ProjModal(props) {
           {props.creationDate}
         </span>
       </Modal.Header>
-      <Modal.Body className="flex flex-col-reverse overflow-auto md:flex-row">
+      <Modal.Body className="flex flex-col overflow-auto md:flex-row-reverse">
+        {/* description */}
+        <div className="space-y-4 md:w-2/3 md:pl-4">
+          <props.detailComponent />
+        </div>
+
         {/* image and info */}
         <div className="mt-4 grid grid-cols-2 gap-x-2 gap-y-2 text-gray-800 md:mt-0 md:w-1/3 md:grid-cols-1">
-          <img src={props.imgUrl} />
+          <div className="flex items-center">
+            <img src={props.imgUrl} />
+          </div>
           <div className="space-y-2 text-sm">
             <div>
               <h3 className="font-semibold">Techstack:</h3>
@@ -43,26 +52,23 @@ function ProjModal(props) {
               <h3 className="font-semibold">Deployment:</h3>
               <p>{props.deployment}</p>
             </div>
+            <div className="flex">
+              <Button
+                theme={buttonTheme}
+                color="peach"
+                size="sm"
+                href={props.githubUrl}
+                target="_blank"
+              >
+                <GithubSvg className="mr-2 w-5 fill-peach-900" />
+                Source Code
+              </Button>
+            </div>
           </div>
-        </div>
-
-        {/* description */}
-        <div className="space-y-4 md:w-2/3 md:pl-4">
-          <props.detailComponent />
         </div>
       </Modal.Body>
       <Modal.Footer>
         <div className="grid w-full grid-cols-2 gap-2">
-          <Button
-            theme={buttonTheme}
-            className="grow"
-            color="peach"
-            href={props.githubUrl}
-            target="_blank"
-          >
-            <GithubSvg className="mr-2 w-5 fill-peach-900" />
-            Source Code
-          </Button>
           <Button
             theme={buttonTheme}
             className="grow"
@@ -72,6 +78,14 @@ function ProjModal(props) {
           >
             Visit Website
             <ExtLinkSvg className="ml-2 w-5 stroke-peach-900" />
+          </Button>
+          <Button
+            theme={buttonTheme}
+            className="grow"
+            color="gray"
+            onClick={props.handleClose}
+          >
+            Close
           </Button>
         </div>
       </Modal.Footer>
