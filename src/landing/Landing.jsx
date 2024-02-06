@@ -4,14 +4,14 @@ import NavButton from "./NavButton";
 
 const avatarProps = {
   img_url: "./photo.jpg",
-  alt_name: "Patty Liu",
+  alt_name: "Avatar Photo",
 };
 
 function Landing() {
   return (
-    <div className="grid min-h-screen py-6">
+    <div className="grid min-h-screen md:py-6">
       <div className="my-auto flex flex-col items-center lg:flex-row lg:justify-center">
-        <div className="space-y-2 md:space-y-4 lg:w-4/12">
+        <div className="md:space-y-4 lg:w-4/12">
           {/* header */}
           <div className="flex flex-col items-center md:space-y-2">
             <Avatar
@@ -30,7 +30,7 @@ function Landing() {
           </div>
 
           {/* social media icons */}
-          <div className="flex justify-center space-x-4">
+          <div className="my-2 flex justify-center space-x-4">
             <IconButton type="github" />
             <IconButton type="linkedin" />
           </div>
@@ -38,17 +38,23 @@ function Landing() {
 
         <div className="flex flex-col items-center space-y-2 md:space-y-4 lg:w-8/12">
           {/* description */}
-          <div className="space-y-4 text-pretty px-3 py-4 text-sm md:max-w-xl md:py-6 md:text-lg">
+          <div className="space-y-4 text-pretty px-3 text-sm md:max-w-xl md:py-4 md:py-6 md:text-lg">
             <p>
-              With 6 years of professional experience, I possess expertise in
-              backend technologies and languages such as Python, Ruby, and Java.
-              I&apos;m also proficient in front-end technologies and frameworks
-              (e.g., HTML, CSS, JavaScript, React.)
+              Throughout my 6-year career, I am dedicated to delivering
+              high-quality software, pursuing continuous growth, and maintaining
+              seamless collaboration with cross-functional teams.
             </p>
             <p>
-              Throughout my career, I am dedicated to delivering high-quality
-              software, pursuing continuous growth, and maintaining seamless
-              collaboration with cross-functional teams.
+              I possess expertise in NLP and search systems. In my early career,
+              I honed Java and performance optimization skills while developing
+              an industry-grade NLP system. I also gained valuable experience
+              collaborating with specialists to turn experimental solutions into
+              robust software systems.
+            </p>
+            <p>
+              Later, I pivoted my expertise into web development, expanding
+              proficiency in backend and frontend technologies to create
+              full-stack, data-intensive applications.
             </p>
           </div>
 
