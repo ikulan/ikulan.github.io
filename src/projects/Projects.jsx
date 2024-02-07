@@ -20,7 +20,7 @@ const projObjs = [
     techstack: "JavaScript, React, TailwindCSS, Flowbite-React, Vite",
     deployment: "GitHub Pages",
     siteUrl: "https://ikulan.github.io",
-    githubUrl: "https://github.com/ikulan/personal_website",
+    githubUrl: "https://github.com/ikulan/ikulan.github.io",
   },
   {
     name: "Three Little Piggies",
