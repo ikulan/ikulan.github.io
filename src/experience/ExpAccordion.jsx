@@ -10,13 +10,13 @@ const customTheme = {
       base: "px-5 last:rounded-b-lg first:rounded-t-lg",
     },
     title: {
-      base: "flex w-full items-center justify-between first:rounded-t-lg last:rounded-b-lg px-5 text-left font-medium text-gray-500",
+      base: "flex w-full items-center justify-between first:rounded-t-lg last:rounded-b-lg px-5 text-left font-medium text-stone-500",
       flush: {
         off: "hover:bg-peach-100",
         on: "bg-peach-200",
       },
       open: {
-        on: "text-gray-500 bg-peach-100",
+        on: "text-stone-500 bg-peach-100",
       },
     },
   },

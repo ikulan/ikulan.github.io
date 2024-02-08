@@ -3,9 +3,9 @@ import IconButton from "./IconButton";
 function Footer() {
   return (
     <footer className="bg-stone-200">
-      <div className="flex flex-row items-center justify-center gap-4 px-12 py-4 dark:bg-gray-700">
+      <div className="flex flex-row items-center justify-center gap-4 px-12 py-4">
         <div>
-          <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center md:text-base">
+          <span className="text-sm text-stone-700 sm:text-center md:text-base">
             <a
               href="https://github.com/ikulan/personal_website"
               className="hover:text-peach-600 hover:underline"

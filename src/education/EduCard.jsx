@@ -12,9 +12,9 @@ function EduCard(props) {
       <div>
         <h3 className="text-md font-semibold xl:text-lg">{props.degree}</h3>
         <h2 className="text-lg font-semibold lg:text-xl">{props.program}</h2>
-        <p className="text-sm text-gray-500 xl:text-base">{props.school}</p>
-        <p className="text-sm text-gray-500 xl:text-base">{props.location}</p>
-        <p className="text-sm text-gray-500 xl:text-base">{props.years}</p>
+        <p className="text-sm text-stone-500 xl:text-base">{props.school}</p>
+        <p className="text-sm text-stone-500 xl:text-base">{props.location}</p>
+        <p className="text-sm text-stone-500 xl:text-base">{props.years}</p>
       </div>
     </Card>
   );

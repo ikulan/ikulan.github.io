@@ -1,6 +1,6 @@
 export const eduCardTheme = {
   root: {
-    base: "flex rounded-lg border border-gray-200 bg-white shadow-md items-center",
+    base: "flex rounded-lg border border-stone-200 bg-white shadow-md items-center",
     children: "flex h-full flex-col justify-center p-2 lg:p-4",
     horizontal: {
       off: "flex-col",

@@ -22,13 +22,13 @@ function ProjCard(props) {
         onClick={() => setOpenModal(true)}
       >
         <div className="">
-          <h5 className="text-lg font-bold tracking-tight text-stone-900 dark:text-white lg:text-xl">
+          <h5 className="text-lg font-bold tracking-tight text-stone-900 lg:text-xl">
             {props.name}
           </h5>
-          <p className="text-xs text-gray-500 lg:text-sm">
+          <p className="text-xs text-stone-500 lg:text-sm">
             {props.creationDate}
           </p>
-          <p className="text-sm text-gray-900 lg:my-2 lg:text-base">
+          <p className="text-sm text-stone-900 lg:my-2 lg:text-base">
             {props.description}
           </p>
         </div>

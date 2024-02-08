@@ -15,11 +15,11 @@ function EduModal(props) {
         <div className="text-center">
           <h5 className="text-md font-medium xl:text-lg">{props.degree}</h5>
           <h4 className="text-lg font-semibold lg:text-xl">{props.program}</h4>
-          <span className="text-sm text-gray-500 xl:text-base">
+          <span className="text-sm text-stone-500 xl:text-base">
             {props.school}
           </span>
           <span> &middot; </span>
-          <span className="text-sm text-gray-500 xl:text-base">
+          <span className="text-sm text-stone-500 xl:text-base">
             {props.years}
           </span>
         </div>

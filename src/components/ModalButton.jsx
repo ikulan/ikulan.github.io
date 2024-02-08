@@ -6,7 +6,7 @@ const buttonTheme = {
   color: {
     peach:
       "text-peach-900 bg-peach-200 hover:bg-peach-300 focus:ring-offset-2 focus:ring-peach-500",
-    gray: "text-gray-900 bg-white border border-gray-200 enabled:hover:bg-gray-100 focus:ring-offset-2 focus:ring-peach-500 focus:ring-4",
+    gray: "text-stone-900 bg-white border border-stone-200 enabled:hover:bg-stone-100 focus:ring-offset-2 focus:ring-peach-500 focus:ring-4",
   },
 };
 

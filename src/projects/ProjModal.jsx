@@ -3,8 +3,7 @@ import ModalButton from "../components/ModalButton";
 
 const modalTheme = {
   content: {
-    inner:
-      "relative rounded-lg bg-white shadow dark:bg-gray-700 flex flex-col max-h-[85dvh]",
+    inner: "relative rounded-lg bg-white shadow flex flex-col max-h-[85dvh]",
   },
 };
 
@@ -19,7 +18,7 @@ function ProjModal(props) {
     >
       <Modal.Header>
         <span className="font-semibold">{props.name}</span>
-        <span className="ml-4 text-xs font-medium text-gray-500 lg:text-sm">
+        <span className="ml-4 text-xs font-medium text-stone-500 lg:text-sm">
           {props.creationDate}
         </span>
       </Modal.Header>
@@ -30,7 +29,7 @@ function ProjModal(props) {
         </div>
 
         {/* image and info */}
-        <div className="mt-4 grid grid-cols-2 gap-x-2 gap-y-2 text-gray-800 md:mt-0 md:w-1/3 md:grid-cols-1">
+        <div className="mt-4 grid grid-cols-2 gap-x-2 gap-y-2 text-stone-800 md:mt-0 md:w-1/3 md:grid-cols-1">
           <div className="flex items-center">
             <img src={props.imgUrl} />
           </div>

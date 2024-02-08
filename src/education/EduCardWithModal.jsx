@@ -21,14 +21,14 @@ function EduCardWithModal(props) {
           <h2 className={`${h2Size} font-semibold lg:text-xl`}>
             {props.program}
           </h2>
-          <p className="text-sm text-gray-500 xl:text-base">{props.school}</p>
+          <p className="text-sm text-stone-500 xl:text-base">{props.school}</p>
           {props.location ? (
             <>
-              <p className="text-sm text-gray-500 xl:text-base">
+              <p className="text-sm text-stone-500 xl:text-base">
                 {props.location}
               </p>
               <div className="flex justify-between">
-                <p className="text-sm text-gray-500 xl:text-base">
+                <p className="text-sm text-stone-500 xl:text-base">
                   {props.years}
                 </p>
                 <p className="text-sm text-peach-600 hover:underline">
@@ -38,7 +38,7 @@ function EduCardWithModal(props) {
             </>
           ) : (
             <>
-              <p className="text-sm text-gray-500 xl:text-base">
+              <p className="text-sm text-stone-500 xl:text-base">
                 {props.years}
               </p>
               <div className="flex justify-end">
