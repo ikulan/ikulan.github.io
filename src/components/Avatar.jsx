@@ -7,7 +7,7 @@ function Avatar({ img_url, alt_name, size = "base" }) {
   return (
     <div>
       <img
-        className={`block rounded-full border-peach-200 text-center ${sizeProperties[size]}`}
+        className={`border-primary block rounded-full text-center ${sizeProperties[size]}`}
         src={img_url}
         alt={alt_name}
       />

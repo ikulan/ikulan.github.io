@@ -2,7 +2,7 @@ import IconButton from "./IconButton";
 
 function Footer() {
   return (
-    <footer className="bg-stone-200">
+    <footer className="bg-background">
       <div className="flex flex-row items-center justify-center gap-4 px-12 py-4">
         <div>
           <span className="text-sm text-stone-700 sm:text-center md:text-base">
