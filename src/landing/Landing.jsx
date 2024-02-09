@@ -25,7 +25,7 @@ function Landing() {
               Software Developer
             </p>
             <p className="text-lg text-stone-700 md:text-2xl">
-              based on Vancouver, Canada
+              based in Vancouver, Canada
             </p>
           </div>
 
