@@ -2,6 +2,7 @@ import SectionHeader from "../components/SectionHeader";
 import ProjCard from "./ProjCard";
 import DetailWebsite from "./DetailWebsite";
 import DetailPiggies from "./DetailPiggies";
+import DetailMovieList from "./DetailMovieList";
 
 const projObjs = [
   {
@@ -21,6 +22,23 @@ const projObjs = [
     deployment: "GitHub Pages",
     siteUrl: "https://ikulan.github.io",
     githubUrl: "https://github.com/ikulan/ikulan.github.io",
+  },
+  {
+    name: "My Movie List",
+    imgUrl: "./projects/movie-list.png",
+    creationDate: "Dec, 2023",
+    description:
+      "A web app for searching movie's information, given scores, and saving personal watched list.",
+    skills: [
+      { name: "JavaScript", color: "amber" },
+      { name: "CSS", color: "sky" },
+      { name: "React", color: "sky" },
+    ],
+    detailComponent: DetailMovieList,
+    techstack: "JavaScript, React, CSS",
+    deployment: "Vercel",
+    siteUrl: "https://my-movie-list-iota.vercel.app/",
+    githubUrl: "https://github.com/ikulan/ReactProjects/tree/main/MyMovieList",
   },
   {
     name: "Three Little Piggies",
