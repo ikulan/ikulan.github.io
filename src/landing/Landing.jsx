@@ -45,11 +45,11 @@ function Landing() {
               seamless collaboration with cross-functional teams.
             </p>
             <p>
-              I possess expertise in NLP and search systems. In my early career,
-              I honed Java and performance optimization skills while developing
-              an industry-grade NLP system. I also gained valuable experience
-              collaborating with specialists to turn experimental solutions into
-              robust software systems.
+              I possess expertise in Natural Language Processing (NLP) and
+              Information Retrieval. In my early career, I developed an
+              industry-grade NLP system using Java. I also gained valuable
+              experience collaborating with specialists to turn experimental
+              solutions into robust production software systems.
             </p>
             <p>
               Later, I pivoted my expertise into web development, expanding

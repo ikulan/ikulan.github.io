@@ -30,11 +30,12 @@ const expObjs = [
   {
     companyName: "NetBase (now Quid)",
     companyUrl: "https://www.quid.com",
-    title: "Software Engineer",
+    title: "Software Engineer II",
     startYear: 2015,
     endYear: 2018,
     skills: [
       { name: "Java", color: "amber" },
+      { name: "Jenkins", color: "lake" },
       { name: "Natural Language Processing", color: "blueviolet" },
     ],
     descriptions: [
