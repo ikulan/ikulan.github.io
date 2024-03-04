@@ -16,7 +16,7 @@ function ProjCard(props) {
     <>
       <Card
         theme={customTheme}
-        className="border-primary h-[24rem] w-64 shrink-0 border-2 shadow-lg hover:-translate-x-2 hover:-translate-y-2 hover:cursor-pointer lg:h-[28rem] lg:w-72"
+        className="h-[24rem] w-64 shrink-0 shadow-lg hover:-translate-x-2 hover:-translate-y-2 hover:cursor-pointer lg:h-[28rem] lg:w-72"
         imgAlt="Meaningful alt text for an image that is not purely decorative"
         imgSrc={props.imgUrl}
         onClick={() => setOpenModal(true)}
