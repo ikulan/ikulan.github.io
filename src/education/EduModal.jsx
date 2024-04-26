@@ -18,7 +18,7 @@ function EduModal(props) {
           <span className="text-sm text-stone-500 xl:text-base">
             {props.school}
           </span>
-          <span> &middot; </span>
+          {props.school && <span> &middot; </span>}
           <span className="text-sm text-stone-500 xl:text-base">
             {props.years}
           </span>

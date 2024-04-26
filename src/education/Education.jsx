@@ -3,6 +3,7 @@ import EduCard from "./EduCard";
 import EduCardWithModal from "./EduCardWithModal";
 import DetailLLM from "./DetailLLM";
 import DetailMaster from "./DetailMaster";
+import DetailAWSSAA from "./DetailAWSSAA";
 
 const eduObjs = [
   {
@@ -42,6 +43,18 @@ const eduObjs = [
     detailComponent: DetailLLM,
     credentialUrl:
       "https://credentials.edx.org/credentials/5d0f0fefcc2d43e2b756fcf5b910c7d6/",
+  },
+  {
+    degree: "AWS Certified",
+    program: "Solutions Architect – Associate",
+    school: null,
+    logo: "./badge_aws_saa.png",
+    location: null,
+    years: "2024",
+    hasDetail: true,
+    detailComponent: DetailAWSSAA,
+    credentialUrl:
+      "https://www.credly.com/badges/1a48e92d-f6a2-4183-aba1-e4d7fd596ee8/public_url",
   },
 ];
 
