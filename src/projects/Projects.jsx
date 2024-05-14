@@ -3,8 +3,29 @@ import ProjCard from "./ProjCard";
 import DetailWebsite from "./DetailWebsite";
 import DetailPiggies from "./DetailPiggies";
 import DetailMovieList from "./DetailMovieList";
+import DetailPwdManager from "./DetailPwdManager";
 
 const projObjs = [
+  {
+    name: "Password Manager",
+    imgUrl: "./projects/password-manager.png",
+    creationDate: "May, 2024",
+    description:
+      "An web app that can securely store and share usernames and passwords.",
+    skills: [
+      { name: "Ruby on Rails", color: "peach" },
+      { name: "Tailwind CSS", color: "sky" },
+      { name: "JavaScript", color: "amber" },
+      { name: "Stimulus.js", color: "amber" },
+      { name: "Docker", color: "lake" },
+    ],
+    detailComponent: DetailPwdManager,
+    techstack: "Ruby on Rails, TailwindCSS, JavaScript, Stimulus.js",
+    deployment: "Fly.io, Docker",
+    siteUrl: "https://password-manager-pliu.fly.dev/",
+    githubUrl:
+      "https://github.com/ikulan/RailsProjects/tree/main/password_manager",
+  },
   {
     name: "Personal Website",
     imgUrl: "./projects/landing_1024x768.png",

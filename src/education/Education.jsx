@@ -38,7 +38,7 @@ const eduObjs = [
     school: "Databricks",
     logo: "./logo_databricks.png",
     location: null,
-    years: "2023",
+    years: "Oct, 2023",
     hasDetail: true,
     detailComponent: DetailLLM,
     credentialUrl:
@@ -50,7 +50,7 @@ const eduObjs = [
     school: null,
     logo: "./badge_aws_saa.png",
     location: null,
-    years: "2024",
+    years: "Apr, 2024",
     hasDetail: true,
     detailComponent: DetailAWSSAA,
     credentialUrl:

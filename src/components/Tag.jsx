@@ -1,5 +1,6 @@
 const colorClasses = {
   amber: "bg-amber-200 text-amber-900",
+  peach: "bg-peach-200 text-peach-900",
   sky: "bg-sky-200 text-sky-900",
   blueviolet: "bg-blueviolet-200 text-blueviolet-900",
   lake: "bg-lake-200 text-lake-900",
