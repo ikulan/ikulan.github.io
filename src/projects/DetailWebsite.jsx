@@ -25,8 +25,7 @@ function DetailWebsite() {
       {/* next step */}
       <h5 className="font-medium">Next Step</h5>
       <ul className="modal-text list-inside list-disc">
-        <li>To add dark mode.</li>
-        <li>Optimize performance by eliminating unnecessary re-rendering</li>
+        <li>Add backend content management service.</li>
       </ul>
     </>
   );
