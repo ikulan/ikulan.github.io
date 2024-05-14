@@ -24,8 +24,7 @@ function DetailPwdManager() {
       {/* next step */}
       <h5 className="font-medium">Next Step</h5>
       <ul className="modal-text list-inside list-disc">
-        <li>Improve the front-end look.</li>
-        <li>Add a feature to toggle password display.</li>
+        <li>Add a feature to toggle on/off password display.</li>
       </ul>
     </>
   );
