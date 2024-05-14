@@ -1,6 +1,6 @@
 function SectionHeader({ children }) {
   return (
-    <h1 className="pb-2 text-3xl font-bold lg:mb-4 xl:text-5xl">{children}</h1>
+    <h1 className="pb-2 text-3xl font-bold lg:mb-4 2xl:text-5xl">{children}</h1>
   );
 }
 

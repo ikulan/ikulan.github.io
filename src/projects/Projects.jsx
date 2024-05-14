@@ -89,7 +89,7 @@ function Projects() {
         <SectionHeader>Projects</SectionHeader>
         <p>Click to see more detail.</p>
       </div>
-      <div className="m-4 grid items-center gap-x-6 gap-y-6 md:grid-cols-2 lg:grid-cols-3 lg:items-start lg:justify-start xl:grid-cols-4">
+      <div className="m-4 grid items-center gap-x-6 gap-y-6 md:grid-cols-2 lg:grid-cols-3 lg:items-start lg:justify-start 2xl:grid-cols-4">
         {projObjs.map((obj, i) => (
           <div key={i} className="flex justify-center">
             <ProjCard key={i} {...obj} />
