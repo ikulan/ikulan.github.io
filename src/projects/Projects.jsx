@@ -14,13 +14,13 @@ const projObjs = [
       "An web app that can securely store and share usernames and passwords.",
     skills: [
       { name: "Ruby on Rails", color: "peach" },
+      { name: "PostgreSQL", color: "lake" },
       { name: "Tailwind CSS", color: "sky" },
       { name: "JavaScript", color: "amber" },
-      { name: "Stimulus.js", color: "amber" },
-      { name: "Docker", color: "lake" },
     ],
     detailComponent: DetailPwdManager,
-    techstack: "Ruby on Rails, TailwindCSS, JavaScript, Stimulus.js",
+    techstack:
+      "Ruby on Rails, PostgreSQL, TailwindCSS, JavaScript, Stimulus.js",
     deployment: "Fly.io, Docker",
     siteUrl: "https://password-manager-pliu.fly.dev/",
     githubUrl:
