@@ -30,7 +30,7 @@ function EduModal(props) {
         <div className="grid w-full grid-cols-2 gap-2">
           {props.credentialUrl ? (
             <ModalButton type="link" action={props.credentialUrl}>
-              Show Credential
+              Show Certificate
             </ModalButton>
           ) : (
             <div></div>

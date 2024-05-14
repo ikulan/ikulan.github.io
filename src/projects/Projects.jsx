@@ -11,7 +11,7 @@ const projObjs = [
     imgUrl: "./projects/password-manager.png",
     creationDate: "May, 2024",
     description:
-      "An web app that can securely store and share usernames and passwords.",
+      "A web app that can securely store and share usernames and passwords.",
     skills: [
       { name: "Ruby on Rails", color: "peach" },
       { name: "PostgreSQL", color: "lake" },
