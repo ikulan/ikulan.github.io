@@ -38,13 +38,17 @@ function ProjModal(props) {
               <h3 className="font-semibold">Techstack:</h3>
               <p>{props.techstack}</p>
             </div>
-            <div>
-              <h3 className="font-semibold">Deployment:</h3>
-              <p>{props.deployment}</p>
-            </div>
-            <div className="flex">
-              <ModalButton type="github" action={props.githubUrl} />
-            </div>
+            {props.deployment && (
+              <div>
+                <h3 className="font-semibold">Deployment:</h3>
+                <p>{props.deployment}</p>
+              </div>
+            )}
+            {props.githubUrl && (
+              <div className="flex">
+                <ModalButton type="github" action={props.githubUrl} />
+              </div>
+            )}
           </div>
         </div>
       </Modal.Body>

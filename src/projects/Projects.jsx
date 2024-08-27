@@ -3,9 +3,25 @@ import ProjCard from "./ProjCard";
 import DetailWebsite from "./DetailWebsite";
 import DetailPiggies from "./DetailPiggies";
 import DetailMovieList from "./DetailMovieList";
+import DetailVanAISummit from "./DetailVanAISummit";
 import TechCard from "./TechCard";
 
 const projObjs = [
+  {
+    name: "AI Summit Vancouver's Website",
+    imgUrl: "./projects/vanaisummit.jpeg",
+    creationDate: "Aug, 2024",
+    description:
+      "As a volunteer team member, I contributed to the development of the event's website.",
+    skills: [
+      { name: "WordPress", color: "lake" },
+      { name: "JavaScript", color: "amber" },
+      { name: "CSS", color: "sky" },
+    ],
+    detailComponent: DetailVanAISummit,
+    techstack: "WordPress, JavaScript, CSS, HTML",
+    siteUrl: "https://vanaisummit.com/",
+  },
   {
     name: "Personal Website",
     imgUrl: "./projects/landing_1024x768.png",
@@ -66,7 +82,7 @@ function Projects() {
   return (
     <div id="section_proj" className="my-6 flex flex-col lg:mx-8 lg:my-12">
       <div>
-        <SectionHeader>Projects</SectionHeader>
+        <SectionHeader>Portfolios</SectionHeader>
       </div>
       <div className="grid-row grid items-center justify-center gap-y-6 md:grid-cols-2 2xl:grid-cols-3">
         <div className="flex justify-center">
