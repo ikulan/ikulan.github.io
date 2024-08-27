@@ -4,6 +4,7 @@ import DetailWebsite from "./DetailWebsite";
 import DetailPiggies from "./DetailPiggies";
 import DetailMovieList from "./DetailMovieList";
 import DetailPwdManager from "./DetailPwdManager";
+import TechCard from "./TechCard";
 
 const projObjs = [
   {
@@ -87,15 +88,29 @@ function Projects() {
     <div id="section_proj" className="my-6 flex flex-col lg:mx-8 lg:my-12">
       <div>
         <SectionHeader>Projects</SectionHeader>
-        <p>Click to see more detail.</p>
       </div>
-      <div className="m-4 grid items-center gap-x-6 gap-y-6 md:grid-cols-2 lg:grid-cols-3 lg:items-start lg:justify-start 2xl:grid-cols-4">
+      <div className="grid-row grid items-center justify-center gap-y-6 md:grid-cols-2 2xl:grid-cols-3">
+        <div className="flex justify-center">
+          <TechCard
+            title="Ruby on Rails Projects"
+            iconUrl="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg"
+            githubUrl="https://github.com/ikulan/RailsProjects"
+          />
+        </div>
+        <div className="flex justify-center">
+          <TechCard
+            title="React Projects"
+            iconUrl="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
+            githubUrl="https://github.com/ikulan/ReactProjects"
+          />
+        </div>
+      </div>
+      <div className="mt-8 grid items-center gap-x-6 gap-y-6 md:grid-cols-2 lg:grid-cols-3 lg:items-start lg:justify-start 2xl:grid-cols-4">
         {projObjs.map((obj, i) => (
           <div key={i} className="flex justify-center">
             <ProjCard key={i} {...obj} />
           </div>
         ))}
-        <div></div>
       </div>
     </div>
   );
