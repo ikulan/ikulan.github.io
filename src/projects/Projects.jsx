@@ -5,8 +5,27 @@ import DetailPiggies from "./DetailPiggies";
 import DetailMovieList from "./DetailMovieList";
 import DetailVanAISummit from "./DetailVanAISummit";
 import TechCard from "./TechCard";
+import DetailDaycare from "./DetailDaycare";
 
 const projObjs = [
+  {
+    name: "BC-Daycares.info",
+    imgUrl: "./projects/bc-daycares-info.png",
+    creationDate: "Dec, 2024",
+    description:
+      "A web application that aims to provide a better daycare map for BC, Canada.",
+    skills: [
+      { name: "TypeScript", color: "amber" },
+      { name: "React", color: "sky" },
+      { name: "Tailwind CSS", color: "sky" },
+      { name: "AWS", color: "lake" },
+    ],
+    detailComponent: DetailDaycare,
+    techstack: "TypeScript, React, TailwindCSS, Vite, Zustand, Mapbox",
+    deployment: "AWS",
+    siteUrl: "https://www.bc-daycares.info",
+    githubUrl: "https://github.com/ikulan/BC-Daycares-Info",
+  },
   {
     name: "AI Summit Vancouver's Website",
     imgUrl: "./projects/vanaisummit.jpeg",
