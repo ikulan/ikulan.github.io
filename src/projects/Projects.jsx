@@ -9,7 +9,7 @@ import DetailDaycare from "./DetailDaycare";
 
 const projObjs = [
   {
-    name: "BC-Daycares.info",
+    name: "ChildCareMap.ca",
     imgUrl: "./projects/bc-daycares-info.png",
     creationDate: "Dec, 2024",
     description:
@@ -23,8 +23,8 @@ const projObjs = [
     detailComponent: DetailDaycare,
     techstack: "TypeScript, React, TailwindCSS, Vite, Zustand, Mapbox",
     deployment: "AWS",
-    siteUrl: "https://www.bc-daycares.info",
-    githubUrl: "https://github.com/ikulan/BC-Daycares-Info",
+    siteUrl: "https://www.childcaremap.ca",
+    githubUrl: "https://github.com/ikulan/ChildCareMap.ca",
   },
   {
     name: "AI Summit Vancouver's Website",

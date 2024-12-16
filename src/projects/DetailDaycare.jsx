@@ -20,7 +20,7 @@ function DetailDaycare() {
         the web application and building the backend pipelines. Learn more on
         the{" "}
         <a
-          href="https://github.com/ikulan/BC-Daycares-Info/tree/main?tab=readme-ov-file#development"
+          href="https://github.com/ikulan/ChildCareMap.ca/tree/main?tab=readme-ov-file#development"
           className="underline hover:text-peach-600"
           target="_blank"
           rel="noreferrer"
